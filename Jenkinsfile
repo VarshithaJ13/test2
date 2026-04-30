@@ -15,10 +15,11 @@ pipeline {
         }
 
         stage('Build Docker Image') {
-            steps {
-                bat "docker build -t %DOCKER_IMAGE%:%TAG% ."
-            }
-        }
+    steps {
+        
+        bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t %DOCKER_IMAGE%:%TAG% .'
+    }
+}
 
         stage('Login to Docker Hub') {
             steps {
