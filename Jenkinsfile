@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 
-                git branch: 'main', url: 'https://github.com/VarshithaJ13/b2.git'
+                git branch: 'main', url: 'https://github.com/VarshithaJ13/test2.git'
             }
         }
 
