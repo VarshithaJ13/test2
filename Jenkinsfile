@@ -41,7 +41,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 
-                bat "docker run -d -p 8080:80 --name my_web_app %DOCKER_IMAGE%:%TAG%"
+                bat "docker run -d -p 8087:80 --name my_web_app %DOCKER_IMAGE%:%TAG%"
             }
         }
     }
